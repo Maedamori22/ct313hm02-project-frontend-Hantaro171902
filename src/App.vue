@@ -1,20 +1,14 @@
+<script setup>
+import Navbar from '@/components/Navbar.vue';
+</script>
+
 <template>
-  <div id="app">
-    <Navbar />
-    <router-view></router-view>
+  <Navbar />
+
+  <div class="container mt-3">
+    <router-view />
   </div>
 </template>
-
-<script>
-import Navbar from '@/components/Navbar.vue';
-
-export default {
-  name: 'App',
-  components: {
-    Navbar
-  }
-};
-</script>
 
 <style>
 /* Add global styles if needed */
@@ -22,6 +16,5 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px; /* Adjust as needed based on your Navbar height */
 }
 </style>

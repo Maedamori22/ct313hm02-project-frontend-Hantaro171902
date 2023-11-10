@@ -10,7 +10,7 @@ Vue.use(VueRouter);
 
 const routes = [
   { path: '/', component: Home }
-  //   { path: '/menu', component: Menu },
+  // { path: '/menu', component: Menu },
   //   { path: '/about', component: AboutUs },
   //   { path: '/cart', component: Cart }
 ];
