@@ -31,5 +31,6 @@ export default {
 /* Add component-specific styles here */
 
 /* Import external styles */
-@import './src/asset/css/navbar.css';
+@import '@/assets/css/navbar.css';
+@import '@/router/index.js';
 </style>
