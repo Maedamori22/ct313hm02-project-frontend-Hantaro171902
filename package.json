@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vue-cli-service build",
-    "preview": "vite preview",
-    "serve": "vue-cli-service serve",
+    "build": "vite build",
+    "preview": "vite preview --port 5050",
+    "serve": "vite serve",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },
@@ -25,7 +25,6 @@
     "eslint": "^8.49.0",
     "eslint-plugin-vue": "^9.17.0",
     "prettier": "^3.0.3",
-    "vite": "^4.4.9",
-    "vue-cli-plugin-component": "~1.12.2"
+    "vite": "^4.4.9"
   }
 }
