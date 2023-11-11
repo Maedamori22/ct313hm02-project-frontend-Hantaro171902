@@ -1,0 +1,184 @@
+#vnt-slide-home .item{
+	position: relative;
+}
+#vnt-slide-home .caption{
+	position: absolute;
+	width: 31%;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	left: 10%;
+}
+#vnt-slide-home .caption img{
+	width: initial;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 35px;
+	-webkit-transition: all 0.5s linear 0.4s;
+	-o-transition: all 0.5s linear 0.4s;
+	transition: all 0.5s linear 0.4s;
+	-webkit-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	-o-transform: translateY(100%);
+	transform: translateY(100%);
+	opacity: 1;
+	visibility: hidden;
+}
+#vnt-slide-home .caption .link{
+	text-align: center;
+	-webkit-transition: all 0.5s linear 0.8s;
+	-o-transition: all 0.5s linear 0.8s;
+	transition: all 0.5s linear 0.8s;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	-o-transform: translateY(100%);
+	transform: translateY(100%);
+}
+#vnt-slide-home .caption .link a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #b22830;
+    border: solid 1px #b22830;
+    padding: 7px 59px;
+    border-radius: 5px;
+}
+#vnt-slide-home .caption .link a:hover{
+	background: #b22830;
+	color:#ffffff;
+}
+#vnt-slide-home.lazy-start .item.slick-current .caption img,
+#vnt-slide-home.lazy-start .item.slick-current .caption .link{
+	opacity: 1;
+	visibility: initial;
+	-webkit-transform: initial;
+	-ms-transform: initial;
+	-o-transform: initial;
+	transform: initial;
+}
+#vnt-slide-home .slick-arrow{
+	width:25px;
+	height:45px;
+	background-color:transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border:none;
+	position: absolute;
+	top: 50%;
+	font-size: 0;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 1;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	color:#999999;
+}
+#vnt-slide-home .slick-prev{
+	left:30px;
+	background-image: url(../images/main/i-prev.png);
+}
+#vnt-slide-home .slick-next{
+	right:30px;
+	background-image: url(../images/main/i-next.png);
+}
+#vnt-slide-home .slick-dots{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+	text-align: center;
+}
+#vnt-slide-home .slick-dots li{
+	display: inline-block;
+	margin: 0 10px;
+}
+#vnt-slide-home .slick-dots li button{
+	width:10px;
+	height:10px;
+	background: #ffffff;
+	border-radius: 100%;
+	font-size: 0;
+	padding:0;
+	border:none;
+	position: relative;
+}
+#vnt-slide-home .slick-dots li button:before{
+	content: "";
+	position: absolute;
+	left: -5px;
+	right: -5px;
+	bottom: -5px;
+	top: -5px;
+	border-radius: 100%;
+	border:solid 1px #ffffff;
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05);
+	opacity: 0;
+	visibility: hidden;
+}
+#vnt-slide-home .slick-dots li.slick-active button:before{
+	opacity: 1;
+	visibility: initial;
+	-webkit-transform: initial;
+	-ms-transform: initial;
+	-o-transform: initial;
+	transform: initial;
+}
+/*=================================================*/
+.bannerHome{
+	position: relative;
+}
+.bannerHome .img img{
+	width: 100%;
+}
+.bannerHome .captionWrap{
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	bottom: 15%;
+}
+.bannerHome .captionWrap .wrapper{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+}
+.bannerHome.left .captionWrap .wrapper{
+	justify-content: flex-start;
+}
+.bannerHome.right .captionWrap .wrapper{
+	justify-content: flex-end;
+}
+.bannerHome .link{
+	max-width: 50%;
+	width:100%;
+	text-align: center;
+}
+.bannerHome .link a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000000;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+    padding: 7px 59px;
+    border-radius: 5px;
+}

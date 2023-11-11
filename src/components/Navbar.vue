@@ -1,4 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <nav class="navbar navbar-expand-md navbar-dark bg">
     <div class="container-fluid">
@@ -49,6 +48,164 @@
       </button>
     </div>
   </nav>
+
+  <!-- Banner Silde -->
+
+  <div id="vnt-slide-home" class="slick-init lazyloading">
+    <div class="item">
+      <div class="bannerHome right hidden-sm hidden-xs">
+        <div class="img">
+          <a
+            href="https://www.highlandscoffee.com.vn/vn/chuong-trinh-thanh-vien-highlands-coffee-da-chinh-thuc-co-mat.html"
+            onmousedown="return rwt(this,'advertise',185)"
+            target="_blank"
+            ><img src="@/assets/picture/HLC_x_Vani_Banner_website.png" alt=""
+          /></a>
+        </div>
+        <div class="captionWrap"></div>
+      </div>
+      <div class="bannerHomeMobile hidden-lg hidden-md">
+        <a
+          href="https://www.highlandscoffee.com.vn/vn/chuong-trinh-thanh-vien-highlands-coffee-da-chinh-thuc-co-mat.html"
+          onmousedown="return rwt(this,'advertise',185)"
+          target="_blank"
+          ><img src="@/assets/picture/HLC_x_Vani_Banner_website.png" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="bannerHome right hidden-sm hidden-xs">
+        <div class="img">
+          <a
+            href="https://www.highlandscoffee.com.vn/vn/highlands-coffee-mien-phi-giao-hang-goi-ngay-1900-1755.html"
+            onmousedown="return rwt(this,'advertise',179)"
+            target="_blank"
+            ><img src="@/assets/picture/DIGITAL_Website_1440x460.jpg" alt=""
+          /></a>
+        </div>
+        <div class="captionWrap"></div>
+      </div>
+      <div class="bannerHomeMobile hidden-lg hidden-md">
+        <a
+          href="https://www.highlandscoffee.com.vn/vn/highlands-coffee-mien-phi-giao-hang-goi-ngay-1900-1755.html"
+          onmousedown="return rwt(this,'advertise',179)"
+          target="_blank"
+          ><img src="@/assets/picture/DIGITAL_Website_1440x460.jpg" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="bannerHome right hidden-sm hidden-xs">
+        <div class="img">
+          <a
+            href="https://www.highlandscoffee.com.vn/vn/highlands-coffee-la-cua-chung-minh-.html"
+            onmousedown="return rwt(this,'advertise',139)"
+            target="_blank"
+            ><img src="@/assets/picture/HC_Brand_Refresh_Master_KV_1440x460.png" alt=""
+          /></a>
+        </div>
+        <div class="captionWrap"></div>
+      </div>
+      <div class="bannerHomeMobile hidden-lg hidden-md">
+        <a
+          href="https://www.highlandscoffee.com.vn/vn/highlands-coffee-la-cua-chung-minh-.html"
+          onmousedown="return rwt(this,'advertise',139)"
+          target="_blank"
+          ><img src="@/assets/picture/HC_Brand_Refresh_Master_KV_1440x460.png" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="bannerHome right hidden-sm hidden-xs">
+        <div class="img">
+          <a
+            href="https://www.highlandscoffee.com.vn/vn/highlands-coffee-la-cua-chung-minh-.html"
+            onmousedown="return rwt(this,'advertise',143)"
+            target="_blank"
+            ><img src="@/assets/picture/BrandFresh/Love.png" alt=""
+          /></a>
+        </div>
+        <div class="captionWrap"></div>
+      </div>
+      <div class="bannerHomeMobile hidden-lg hidden-md">
+        <a
+          href="https://www.highlandscoffee.com.vn/vn/highlands-coffee-la-cua-chung-minh-.html"
+          onmousedown="return rwt(this,'advertise',143)"
+          target="_blank"
+          ><img src="@/assets/picture/BrandFresh/Love.png" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="bannerHome right hidden-sm hidden-xs">
+        <div class="img">
+          <a
+            href="https://www.highlandscoffee.com.vn/vn/highlands-coffee-la-cua-chung-minh-.html"
+            onmousedown="return rwt(this,'advertise',141)"
+            target="_blank"
+            ><img src="@/assets/picture/BrandFresh/Passion.png" alt=""
+          /></a>
+        </div>
+        <div class="captionWrap"></div>
+      </div>
+      <div class="bannerHomeMobile hidden-lg hidden-md">
+        <a
+          href="https://www.highlandscoffee.com.vn/vn/highlands-coffee-la-cua-chung-minh-.html"
+          onmousedown="return rwt(this,'advertise',141)"
+          target="_blank"
+          ><img src="@/assets/picture/BrandFresh/Passion.png" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="bannerHome right hidden-sm hidden-xs">
+        <div class="img">
+          <a
+            href="https://www.highlandscoffee.com.vn/vn/highlands-coffee-la-cua-chung-minh-.html"
+            onmousedown="return rwt(this,'advertise',145)"
+            target="_blank"
+            ><img src="@/assets/picture/BrandFresh/Respect.png" alt=""
+          /></a>
+        </div>
+        <div class="captionWrap"></div>
+      </div>
+      <div class="bannerHomeMobile hidden-lg hidden-md">
+        <a
+          href="https://www.highlandscoffee.com.vn/vn/highlands-coffee-la-cua-chung-minh-.html"
+          onmousedown="return rwt(this,'advertise',145)"
+          target="_blank"
+          ><img src="@/assets/picture/BrandFresh/Respect.png" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="bannerHome right hidden-sm hidden-xs">
+        <div class="img">
+          <a
+            href="https://www.highlandscoffee.com.vn/vn/highlands-coffee-la-cua-chung-minh-.html"
+            onmousedown="return rwt(this,'advertise',134)"
+            target="_blank"
+            ><img src="@/assets/picture/BrandFresh/Support-update_2.png" alt=""
+          /></a>
+        </div>
+        <div class="captionWrap"></div>
+      </div>
+      <div class="bannerHomeMobile hidden-lg hidden-md">
+        <a
+          href="https://www.highlandscoffee.com.vn/vn/highlands-coffee-la-cua-chung-minh-.html"
+          onmousedown="return rwt(this,'advertise',134)"
+          target="_blank"
+          ><img src="@/assets/picture/BrandFresh/Support-update_2.png" alt=""
+        /></a>
+      </div>
+    </div>
+  </div>
 
   <div id="carouselExampleIndicators" class="carousel slide">
     <div class="carousel-indicators">
@@ -152,5 +309,5 @@ export default {
 /* Media query for responsiveness */
 
 /* Import external styles */
-/* @import '@/assets/css/navbar.css'; */
+@import 'css/home.css';
 </style>
