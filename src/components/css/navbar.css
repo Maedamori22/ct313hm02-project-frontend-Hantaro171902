@@ -11,10 +11,6 @@
     align-items: center;
 }
 
-.navbar-brand {
-    /* Style for logo or brand content */
-}
-
 .navbar-links {
     display: flex;
 }
@@ -23,10 +19,6 @@
     text-decoration: none;
     color: #fff;
     margin: 0 15px;
-}
-
-.navbar-auth {
-    /* Style for authentication button or icon */
 }
 
 /* Media query for responsiveness */

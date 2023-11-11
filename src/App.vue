@@ -1,11 +1,5 @@
-<!-- <script setup>
-import Navbar from '@/components/Navbar.vue';
-</script> -->
-
 <template>
-  <div class="container mt-3">
-    <router-view></router-view>
-  </div>
+  <router-view />
 </template>
 
 <style>
