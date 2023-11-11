@@ -1,46 +1,46 @@
-function makeContactsService() {
+function makeUsersService() {
   const baseUrl = '/api/users';
   const headers = {
     'Content-Type': 'application/json'
   };
-  async function getContacts(page, limit = 5) {
+  async function getUsers(page, limit = 5) {
     let url = `${baseUrl}?page=${page}&limit=${limit}`;
     return await fetch(url).then((res) => res.json());
   }
-  async function createContact(contact) {
+  async function createUser(user) {
     return await fetch(baseUrl, {
       method: 'POST',
       headers,
-      body: JSON.stringify(contact)
+      body: JSON.stringify(user)
     }).then((res) => res.json());
   }
-  async function deleteAllContacts() {
+  async function deleteAllUsers() {
     return await fetch(baseUrl, {
       method: 'DELETE'
     }).then((res) => res.json());
   }
-  async function getContact(id) {
+  async function getUser(id) {
     return await fetch(`${baseUrl}/${id}`).then((res) => res.json());
   }
-  async function updateContact(id, contact) {
+  async function updateUser(id, user) {
     return await fetch(`${baseUrl}/${id}`, {
       method: 'PUT',
       headers,
-      body: JSON.stringify(contact)
+      body: JSON.stringify(user)
     }).then((res) => res.json());
   }
-  async function deleteContact(id) {
+  async function deleteUser(id) {
     return await fetch(`${baseUrl}/${id}`, {
       method: 'DELETE'
     }).then((res) => res.json());
   }
   return {
-    getContacts,
-    deleteAllContacts,
-    getContact,
-    createContact,
-    updateContact,
-    deleteContact
+    getUsers,
+    deleteAllUsers,
+    getUser,
+    createUser,
+    updateUser,
+    deleteUser
   };
 }
-export default makeContactsService();
+export default makeUsersService();
