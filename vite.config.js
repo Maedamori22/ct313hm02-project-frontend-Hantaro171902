@@ -22,6 +22,22 @@ export default defineConfig({
     }
   },
 
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              esModule: false
+            }
+          }
+        ]
+      }
+    ]
+  },
+
   middleware: (customMiddleware) => {
     return [
       (req, res, next) => {
