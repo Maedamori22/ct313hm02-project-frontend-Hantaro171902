@@ -25,15 +25,20 @@
           </li>
           <li class="nav-item">
             <router-link to="/cart" class="nav-link mx-3">
-              <button class="btn btn-outline-light">
+              <button class="btn btnCart">
                 <i class="fa fa-shopping-cart"></i>
               </button>
             </router-link>
           </li>
           <li class="nav-item">
-            <button @click="toggleLogin" class="btn btn-outline-light">
-              {{ isLoggedIn ? 'Logout' : 'Login' }}
-            </button>
+            <router-link to="/login" class="nav-link">
+              <button class="btn btnLogin-popup">Login</button>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/signin" class="nav-link">
+              <button class="btn btnSignin-popup">Sign in</button>
+            </router-link>
           </li>
         </ul>
       </div>
@@ -62,11 +67,6 @@ export default {
         // Add more settings as needed
       }
     };
-  },
-  methods: {
-    toggleLogin() {
-      this.isLoggedIn = !this.isLoggedIn;
-    }
   }
 };
 </script>
@@ -92,5 +92,45 @@ export default {
 
 .navbar-links {
   display: flex;
+}
+
+.btnSignin-popup {
+  width: 80px;
+  height: 30px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+
+.btnSignin-popup:hover {
+  color: black;
+  background: #fff;
+}
+
+.btnLogin-popup {
+  width: 80px;
+  height: 30px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+
+.btnLogin-popup:hover {
+  color: black;
+  background: #fff;
 }
 </style>
