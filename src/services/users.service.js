@@ -34,13 +34,26 @@ function makeUsersService() {
       method: 'DELETE'
     }).then((res) => res.json());
   }
+
+  // Login
+  async function loginUser(credentials) {
+    return await fetch('/api/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(credentials)
+    }).then((res) => res.json());
+  }
+
   return {
     getUsers,
     deleteAllUsers,
     getUser,
     createUser,
     updateUser,
-    deleteUser
+    deleteUser,
+    loginUser
   };
 }
 export default makeUsersService();

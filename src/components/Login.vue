@@ -23,24 +23,20 @@ export default {
   },
   methods: {
     async login() {
-      // Call a method to send the login credentials to the backend API
       try {
-        const response = await fetch('/api/login', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            username: this.username,
-            password: this.password
-          })
-        });
+        const credentials = {
+          u_name: this.username,
+          u_password: this.password
+        };
+
+        const response = await this.$usersService.loginUser(credentials);
 
         if (response.ok) {
-          // Handle successful login, e.g., set user information in Vuex store
-          console.log('Login successful!');
+          // Handle successful login
+          const data = await response.json();
+          console.log('Login successful!', data);
         } else {
-          // Handle login error, e.g., show error message
+          // Handle login error
           console.error('Login failed');
         }
       } catch (error) {
