@@ -23,21 +23,20 @@ export default {
   },
   methods: {
     async login() {
+      const credentials = {
+        u_name: this.username,
+        u_password: this.password
+      };
+
       try {
-        const credentials = {
-          u_name: this.username,
-          u_password: this.password
-        };
+        const { success, data, error } = await this.$usersService.loginUser(credentials);
 
-        const response = await this.$usersService.loginUser(credentials);
-
-        if (response.ok) {
+        if (success) {
           // Handle successful login
-          const data = await response.json();
           console.log('Login successful!', data);
         } else {
           // Handle login error
-          console.error('Login failed');
+          console.error('Login failed', error);
         }
       } catch (error) {
         console.error('Error during login:', error);
