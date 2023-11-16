@@ -18,10 +18,10 @@
             <router-link to="/" class="nav-link mx-3 text-white fs-5">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/menu.vue" class="nav-link mx-3 text-white fs-5">Menu</router-link>
+            <router-link to="/menu" class="nav-link mx-3 text-white fs-5">Menu</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/about" class="nav-link mx-3 text-white fs-5">About Us</router-link>
+            <router-link to="/aboutus" class="nav-link mx-3 text-white fs-5">About Us</router-link>
           </li>
           <li class="nav-item">
             <router-link to="/cart" class="nav-link mx-3">
