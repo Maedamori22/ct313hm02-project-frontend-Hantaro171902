@@ -121,7 +121,6 @@ export default {};
 .about_banner_2 img{
     width: 800px;
     float: left;
-    font-size: 13px;
 }
 
 </style>
